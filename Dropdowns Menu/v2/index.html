@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Made by Nayan Das -->
+<!-- Follow ME: https://socialportal.nayanchandradas.com -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdowns V02</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div id="food-menu">
+        <button class="menu-toggle">
+            <span>Food Categories</span>
+            <i class="fa-solid fa-caret-down"></i>
+        </button>
+
+        <ul class="menu-list">
+            <li class="list-item"><a href="#">American</a></li>
+            <li class="list-item"><a href="#">Thai</a></li>
+            <li class="list-item list-dropdown">
+                <a href="#" class="submenu-trigger">
+                    <span>Dietary Preferences</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <ul class="submenu-list">
+                    <li class="submenu-item"><a href="#">Low Carb</a></li>
+                    <li class="submenu-item"><a href="#">Dairy-Free</a></li>
+                    <li class="submenu-item"><a href="#">Paleo</a></li>
+                </ul>
+            </li>
+            <li class="list-item"><a href="#">Indian</a></li>
+            <li class="list-item list-dropdown">
+                <a href="#" class="submenu-trigger">
+                    <span>Offers & Deals</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <ul class="submenu-list">
+                    <li class="submenu-item"><a href="#">Discount Coupons</a></li>
+                    <li class="submenu-item"><a href="#">Festive Deals</a></li>
+                    <li class="submenu-item"><a href="#">Combo Offers</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

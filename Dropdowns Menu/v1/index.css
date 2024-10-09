@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Poppins, Arial, sans-serif;
+    background-color: hsl(210, 15%, 12%);
+    color: #e2e6ea;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+}
+
+/* Button reset */
+button {
+    border: 0;
+    background: none;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1c1f;
+    padding: 0 40px;
+    height: 4.8rem;
+}
+
+nav>.brand-logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff9f43;
+}
+
+/* Menu container for all dropdowns */
+.menu-container {
+    display: flex;
+    align-self: stretch;
+}
+
+/* Dropdown general structure */
+.menu-dropdown {
+    position: relative;
+    padding: 26px;
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 8px;
+}
+
+/* Hover effect on dropdown */
+.menu-dropdown:hover {
+    background-color: hsl(210, 25%, 18%);
+    cursor: pointer;
+}
+
+.menu-btn span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu-btn i {
+    font-size: 14px;
+}
+
+/* Dropdown list styling */
+.menu-dropdown:hover>.menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dropdown menu hidden by default */
+.menu-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    background-color: #1a1c1f;
+    display: none;
+}
+
+/* Button styling in dropdown list */
+.menu-list button {
+    padding: 12px 24px;
+}
+
+/* Hover effect for buttons */
+.menu-list button:hover {
+    background-color: hsl(210, 15%, 25%);
+}
